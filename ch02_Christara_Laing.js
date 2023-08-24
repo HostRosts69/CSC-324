@@ -1,7 +1,7 @@
 // Exercises
 //// Looping a triangle
 for (let number = 1; number <= 7; number = number+1) {
-    console.log(hold.repeat(number));
+    console.log("#".repeat(number));
   }
 
 //// FizzBuzz
@@ -19,7 +19,34 @@ for (let number = 0; number <= 100; number = number+1) {
   }
 
 //// Chessboard
-for (let size = 8; size >= 0; size = size-1) {
-    console.log(size)
+let heck = ""
+let size = 10
+for (let sizeL = size; sizeL >= 1; sizeL = sizeL-1) {
+
+    if (sizeL % 2 == 0){
+        let length = size
+        while (length >= 1) {
+            if (length % 2 != 0){
+                heck = heck + "#"
+            } else {
+                heck = heck + " "
+            }
+            length = length-1
+        }
+        
+        }else{
+            let length = size
+            while (length >= 1) {
+                if (length % 2 == 0){
+                    heck = heck + "#"
+                } else {
+                    heck = heck + " "
+                }
+                length = length-1
+        }
+    }
+    
+    heck = heck + "\n"
 }
+console.log (heck)
 
