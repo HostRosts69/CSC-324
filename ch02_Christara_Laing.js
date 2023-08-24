@@ -45,7 +45,6 @@ for (let sizeL = size; sizeL >= 1; sizeL = sizeL-1) {
                 length = length-1
         }
     }
-    
     heck = heck + "\n"
 }
 console.log (heck)
