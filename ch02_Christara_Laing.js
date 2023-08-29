@@ -21,8 +21,41 @@ for (let number = 0; number <= 100; number = number+1) {
   }
 
 //// Chessboard
+
+///// A 8 x 8 checkerboard
 let heck = "" ;
-let size = prompt("Please enter number!", "8");
+let size = 8;
+for (let sizeL = size; sizeL >= 1; sizeL = sizeL-1) {
+
+    if (sizeL % 2 == 0){
+        let length = size;
+        while (length >= 1) {
+            if (length % 2 != 0){
+                heck = heck + "#";
+            } else {
+                heck = heck + " ";
+            }
+            length = length-1;
+        }
+        
+        }else{
+            let length = size;
+            while (length >= 1) {
+                if (length % 2 == 0){
+                    heck = heck + "#";
+                } else {
+                    heck = heck + " ";
+                }
+                length = length-1;
+        }
+    }
+    heck = heck + "\n";
+}
+console.log (heck);
+
+///// larger 20 x 20
+let heck = "" ;
+let size = 20;
 for (let sizeL = size; sizeL >= 1; sizeL = sizeL-1) {
 
     if (sizeL % 2 == 0){
