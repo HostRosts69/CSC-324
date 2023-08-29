@@ -20,7 +20,7 @@ for (let number = 0; number <= 100; number = number+1) {
 
 //// Chessboard
 let heck = ""
-let size = 8
+let size = prompt("Please enter number!", "8")
 for (let sizeL = size; sizeL >= 1; sizeL = sizeL-1) {
 
     if (sizeL % 2 == 0){
