@@ -1,3 +1,5 @@
+//Chapter 2
+
 // Exercises
 //// Looping a triangle
 for (let number = 1; number <= 7; number = number+1) {
