@@ -2,3 +2,7 @@
 
 // Exercises 
 //// Minimum:
+
+//// Recursion:
+
+//// Bean Counting:
