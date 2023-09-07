@@ -98,3 +98,33 @@ function countChar(string = "mississippi", char = "i"){
   console.log(countChar("Big Rats Love High Fives On River Rocks", "R"));
   console.log(countChar());
 
+
+
+// trying recursion with it as an intresting idea
+
+// notes:
+  /// for loop creates a new string and removes the last one in the string
+  /// when string is empty then count of Bs is returned
+  /// this one runs slower
+function countBs_recursion(string = "Box", num = 0){
+    let num_Bs = num;
+    let newString = "";
+    if(string.length == 0){
+        return num_Bs;
+    }else {
+        if (string[string.length - 1] == "B"){
+            num_Bs +=1;
+        }
+
+        for(let strLength = 0; strLength != string.length - 1; strLength += 1){
+             newString += string[strLength];
+        }
+
+        return(countBs_recursion(newString, num_Bs));
+    }   
+}
+
+console.log(countBs_recursion("Box"))
+console.log(countBs_recursion("BBC"));
+console.log(countBs_recursion("Button Bean Borrito"))
+console.log(countBs_recursion("Big bold eyelashes"))
