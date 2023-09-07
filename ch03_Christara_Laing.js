@@ -52,11 +52,8 @@ function isEven(n) {
 }
 
 console.log(isEven(50));
-
 console.log(isEven(75));
-
 console.log(isEven(-1));
-
 console.log(isEven(-2));
 
 //// Bean Counting:
@@ -78,9 +75,9 @@ function countBs(string = "Box"){
 }
 
 console.log(countBs("BBC"));
-console.log(countBs("Button Bean Borrito"))
-console.log(countBs("Big bold eyelashes"))
-console.log(countBs())
+console.log(countBs("Button Bean Borrito"));
+console.log(countBs("Big bold eyelashes"));
+console.log(countBs());
 
 // countChar(string)
 function countChar(string = "mississippi", char = "i"){
@@ -124,7 +121,7 @@ function countBs_recursion(string = "Box", num = 0){
     }   
 }
 
-console.log(countBs_recursion("Box"))
+console.log(countBs_recursion("Box"));
 console.log(countBs_recursion("BBC"));
-console.log(countBs_recursion("Button Bean Borrito"))
-console.log(countBs_recursion("Big bold eyelashes"))
+console.log(countBs_recursion("Button Bean Borrito"));
+console.log(countBs_recursion("Big bold eyelashes"));
