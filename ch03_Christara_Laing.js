@@ -35,7 +35,6 @@ console.log(isEven(-2));
 ///// Does work with negative numbers
 
 function isEven(n) {
-    console.log("number watch: "+ n)
     if (n < 0){
         n = n * -1;
     }
