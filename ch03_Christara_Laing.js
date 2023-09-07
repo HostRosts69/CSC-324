@@ -65,5 +65,10 @@ console.log(isEven(-2));
         //// starts at 0
 function countsBs(string = "Box"){
     let num_Bs = 0;
-    for(let strLength = string.length - 1; strLength != 0; )
+    for(let strLength = string.length - 1; strLength != 0; strLength - 1){
+        console.log("number: "+ strLength );
+        console.log("letter: " + string[strLength]);
+    }
 }
+
+console.log(countBs("BBC"));
