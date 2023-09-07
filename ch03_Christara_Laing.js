@@ -60,3 +60,7 @@ console.log(isEven(-1));
 console.log(isEven(-2));
 
 //// Bean Counting:
+
+function countsBs(string = "Box"){
+    let num_Bs = 0;
+}
