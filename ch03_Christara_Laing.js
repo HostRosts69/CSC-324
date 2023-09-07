@@ -63,6 +63,10 @@ console.log(isEven(-2));
 // Notes:
     /// need to -1 from string.length so that number is similar to counting seq
         //// starts at 0
+    /// needs to strLength != -1 or else it will stop at zero and not continue(stops short)
+    /// does not count lowercase (exercise said only uppercase)
+
+// CountBs(string)
 function countBs(string = "Box"){
     let num_Bs = 0;
     for(let strLength = string.length - 1; strLength != -1; strLength -= 1){
@@ -70,7 +74,27 @@ function countBs(string = "Box"){
             num_Bs += 1;
         }
     }
-    return(num_Bs)
+    return(num_Bs);
 }
 
 console.log(countBs("BBC"));
+console.log(countBs("Button Bean Borrito"))
+console.log(countBs("Big bold eyelashes"))
+console.log(countBs())
+
+// countChar(string)
+function countChar(string = "mississippi", char = "i"){
+    let num_char = 0;
+    for(let strLength = string.length - 1; strLength != -1; strLength -= 1){
+      if(string[strLength] == char){
+        num_char += 1;
+      }
+    }
+    return(num_char);
+  }
+  
+  console.log(countChar("kakkerlak", "k"));
+  console.log(countChar("mississippi", "p"));
+  console.log(countChar("Big Rats Love High Fives On River Rocks", "R"));
+  console.log(countChar());
+
