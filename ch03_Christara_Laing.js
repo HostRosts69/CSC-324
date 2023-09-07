@@ -60,15 +60,10 @@ console.log(isEven(-1));
 console.log(isEven(-2));
 
 //// Bean Counting:
-string = "hi"
-console.log ("hi length: " + string.length);
-console.log("hi char in last place: " + string[string.length - 1]);
-console.log("hi first char: " + string[0])
-console.log("hi char in last place: " + string[string.length]);
-
 // Notes:
     /// need to -1 from string.length so that number is similar to counting seq
         //// starts at 0
 function countsBs(string = "Box"){
     let num_Bs = 0;
+    for(let strLength = string.length - 1; strLength != 0; )
 }
