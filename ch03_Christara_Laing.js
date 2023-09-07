@@ -63,9 +63,9 @@ console.log(isEven(-2));
 // Notes:
     /// need to -1 from string.length so that number is similar to counting seq
         //// starts at 0
-function countsBs(string = "Box"){
+function countBs(string = "Box"){
     let num_Bs = 0;
-    for(let strLength = string.length - 1; strLength != 0; strLength - 1){
+    for(let strLength = string.length - 1; strLength != -1; strLength -= 1){
         console.log("number: "+ strLength );
         console.log("letter: " + string[strLength]);
     }
