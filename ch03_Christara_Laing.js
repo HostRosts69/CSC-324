@@ -24,5 +24,14 @@ function isEven(n) {
         return isEven(n - 2);
     }
 }
+console.log(isEven(50));
+
+console.log(isEven(75));
+
+console.log(isEven(-1));
+
+console.log(isEven(-2));
+
+///// Does work with negative numbers
 
 //// Bean Counting:
