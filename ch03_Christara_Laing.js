@@ -31,6 +31,9 @@ console.log(isEven(75));
 console.log(isEven(-1));
 
 console.log(isEven(-2));
+// Note: added suggestion from Dr. White to multiply by - 1 
+    ///instead of change return(isEven(n + 2)) if n is < 0
+
 
 ///// Does work with negative numbers
 
