@@ -103,19 +103,14 @@ console.log(countChar());
 /// this one runs slower
 function countBs_recursion(string = "Box", num = 0) {
     let num_Bs = num;
-    let newString = "";
     if (string.length == 0) {
         return num_Bs;
     } else {
-        if (string[string.length - 1] == "B") {
+        if (string[0] == "B") {
             num_Bs += 1;
         }
 
-        for (let strLength = 0; strLength != string.length - 1; strLength += 1) {
-            newString += string[strLength];
-        }
-
-        return (countBs_recursion(newString, num_Bs));
+        return (countBs_recursion(string.slice(1), num_Bs));
     }
 }
 
