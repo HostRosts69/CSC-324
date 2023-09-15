@@ -72,3 +72,6 @@ function reverseArray(array){
 }
 console.log(reverseArray(["A", "B", "C"]));
 console.log(reverseArray(["O","l","l","E","H"]));
+
+// can you guess this word?
+console.log(reverseArray(['s','i','s', 'o', 'i', 'n', 'o', 'c', 'o', 'n', 'a', 'c', 'l', 'o', 'v', 'o', 'c', 'i', 'l', 'i', 's', 'c', 'i', 'p', 'o', 'c', 's', 'o', 'r', 'c', 'i', 'm', 'a', 'r', 't', 'l', 'u', 'o', 'n', 'o', 'm', 'u', 'e', 'n', 'P']))
