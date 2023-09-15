@@ -1,6 +1,7 @@
 //Chapter 4
 /// Exercises
 //// Sum and Range
+/// Basic range
 function range(start, end){
     let holdRange = [];
     for (let number = start; number <= end; number = number + 1){
@@ -11,20 +12,53 @@ function range(start, end){
 
 console.log(range(1, 10));
 
+/// Range With Step added
 function rangeStep(start, end, step){
     let holdRange = [];
     if ((end - start) % step != 0){
-        console.log("Sorry this action cannot be completed! \n" + (end - start) + " is not divisable by " + step)
-    }
-
-    for (let number = start; number >= end; number = number + step){
-        holdRange.push(number)
+        for (let number = start; number <= end; number += step){
+            holdRange.push(number);
+        };
+    } else{
+        for (let number = start; number >= end; number += step){
+            holdRange.push(number);
+        };
     };
     return holdRange;
-  }
-
+}
+// where is undefined coming from?
 console.log(rangeStep(1, 10, 2));
 
+console.log(rangeStep(0, 10, 3));
+
+console.log(rangeStep(5, 2, -1));
+
+// weird this one doesnt work
+console.log(rangeStep(1, 10, 3));
 
 
+// failed use of pop
+// can see 55 equated with console.log but comes back as undifined when returned
+function sumPop(array, total = 0){
+    if (array.length <= 0){
+        total += array.pop();
+        return(total);
+    } else {
+        console.log(total)
+        total += array.pop();
+        sumPop(array, total);
+    }
+}
+console.log(sumPop(range(1,10)))
+
+// functioning sum
+function sum(array){
+    let total = 0;
+    for(let num = 0; num <= (array.length - 1); num += 1){
+      total = total + array[num];
+    }
+    return(total);
+  }
+
+console.log(sum(range(1,10)))
 //// Reversing an Array
