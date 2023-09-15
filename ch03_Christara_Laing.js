@@ -110,7 +110,7 @@ function countBs_recursion(string = "Box", num = 0) {
             num_Bs += 1;
         }
 
-        return (countBs_recursion(string.slice(1), num_Bs));
+        return (countBs_recursion(string.slice(1).trim(), num_Bs));
     }
 }
 
