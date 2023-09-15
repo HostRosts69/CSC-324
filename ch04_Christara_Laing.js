@@ -62,3 +62,13 @@ function sum(array){
 
 console.log(sum(range(1,10)))
 //// Reversing an Array
+function reverseArray(array){
+    arrayNew = []
+    for(let num = array.length-1; num >= 0; num -= 1){
+        console.log(num)
+        arrayNew.push(array[num]);
+    }
+    return arrayNew;
+}
+console.log(reverseArray(["A", "B", "C"]));
+console.log(reverseArray(["O","l","l","E","H"]));
