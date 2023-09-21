@@ -60,6 +60,7 @@ function sum(array){
   }
 
 console.log(sum(range(1,10)))
+
 //// Reversing an Array
 ///// unshift could also be used as it pushes to the begining 
 function reverseArray(array){
@@ -75,6 +76,8 @@ console.log(reverseArray(["O","l","l","E","H"]));
 // can you guess this word?
 console.log(reverseArray(['s','i','s', 'o', 'i', 'n', 'o', 'c', 'o', 'n', 'a', 'c', 'l', 'o', 'v', 'o', 'c', 'i', 'l', 'i', 's', 'c', 'i', 'p', 'o', 'c', 's', 'o', 'r', 'c', 'i', 'm', 'a', 'r', 't', 'l', 'u', 'o', 'n', 'o', 'm', 'u', 'e', 'n', 'P']))
 
+
+//Reverse array with a pop functionality
 function reverseArray2(array){
     for(let num = 0; num <= array.length - 1; num += 1){
         array.splice(num, 0, array.pop(0));
