@@ -15,8 +15,42 @@ console.log(flatten());
 
 /// Write Your Own Loop Function
 
+// notes:
+    // Value, test, body, update: argument values needed
+    // first test
+        // second update function
+        // do it all over again until test == true
+function loop(value, test, body ,update){
+    if(test(value) == false){
+        return ;
+    } else{
+        update(value);
+        value = body(value);
+        return (loop(value, test, body, update));
+    }
+}
+
+loop(3, n => n > 0, n => n - 1, console.log);
+// → 3
+// → 2
+// → 1
 
 /// Everything
 function every(array, test) {
-    //hi
-  }
+    for (let elem of array){
+        if (test(elem) != true){
+            console.log(`The element in "${array}" that failed the test is ${ele}. \n The function used to equate this array is "${test}"`)
+            return false;
+        }
+    } 
+    return true;
+}
+
+console.log(every([1, 3, 5], n => n < 10));
+// → true
+console.log(every([2, 4, 16], n => n < 10));
+// → false
+console.log(every([], n => n < 10));
+// → true
+
+
