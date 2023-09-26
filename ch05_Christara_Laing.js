@@ -74,4 +74,4 @@ console.log(every_log([2, 4, 16], n => n < 10));
 console.log(every_log([], n => n < 10));
 // → true
 
-
+console.log(every_log([2, 4, 16], n => Math.max(n,2) == 2));
