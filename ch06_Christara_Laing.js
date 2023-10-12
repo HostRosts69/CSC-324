@@ -3,6 +3,9 @@
 // has:
     /// add, delete, and has methods
     /// static method from 
+
+    // note:
+     // splice(index, howmany, ...)
 class Group {
     constructor(list) {
         this.values = list;
