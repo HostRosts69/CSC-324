@@ -34,21 +34,17 @@
   }
  ]
 
- // complete with code to select and populate the table
- // grab the currently-empty div:
- const listDiv = document.querySelector("#bhangra");
-
- // make the inner html:
  let contents = "<tr> <th>Name</th> <th>Date of Birth</th> <th>Link</th> </tr>";
- artists.forEach(function(artist) {
-   contents += `<tr>`;
-   contents += `<td>${artist.name}</td>`;
-   contents += `<td>${artist.birthYear}</td>`;
-   contents += `<td><a href= "${artist.link}">${artist.link}<a></td>`;
-   contents += "</tr>";
- })
- contents = contents + "</tr>";
  
- //insert unordered list HTML into div:
- listDiv.innerHTML = contents;
+ const table = document.querySelector("#bhangra");
+ table.innerHTML = contents
+  for(const element of artists){
+    var row = table.insertRow(-1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    cell1.innerHTML = element.name;
+    cell2.innerHTML = element.birthYear;
+    cell3.innerHTML = `<a href=${element.link}>${element.link}</a>`;
+  }
  

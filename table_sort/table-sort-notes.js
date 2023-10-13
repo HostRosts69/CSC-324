@@ -73,6 +73,7 @@ console.log(artists.shuffle());
 // Then you could use the above ideas to add
 // an event-listener to the button
 // to show a randomly-selected artist:
+/*
 const randomButton = document.querySelector("#random-button");
 randomButton.addEventListener("click", showRandomArtist);
 
@@ -80,3 +81,4 @@ function showRandomArtist() {
   const artist = document.querySelector("#random-artist");
   artist.innerHTML = pickArtist();
 }
+*/
