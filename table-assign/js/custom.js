@@ -34,17 +34,17 @@
   }
  ]
 
- let contents = "<tr> <th>Name</th> <th>Date of Birth</th> <th>Link</th> </tr>";
- 
+ let contents = "<tr> <th>Name</th> <th>Date of Birth</th> <th>Link</th> </tr>";// needs data so insert row can work
+
  const table = document.querySelector("#bhangra");
- table.innerHTML = contents
+ table.innerHTML = contents;
   for(const element of artists){
-    var row = table.insertRow(-1);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-    var cell3 = row.insertCell(2);
+    var row = table.insertRow(-1);// adds to bottom
+    var cell1 = row.insertCell(0);// adds 1st row cell
+    var cell2 = row.insertCell(1);// adds 2nd row cell
+    var cell3 = row.insertCell(2);// adds 3rd row cell
     cell1.innerHTML = element.name;
     cell2.innerHTML = element.birthYear;
     cell3.innerHTML = `<a href=${element.link}>${element.link}</a>`;
-  }
+}
  
