@@ -28,6 +28,20 @@ const artists = [
 
 // sort the artists by name
 
+let contents = "<tr> <th>Name</th> <th>Date of Birth</th> <th>Link</th> </tr>";// needs data so insert row can work
+
+const table = document.querySelector("#bhangra");
+table.innerHTML = contents;
+ for(const element of artists){
+   var row = table.insertRow(-1);// adds to bottom
+   var cell1 = row.insertCell(0);// adds 1st row cell
+   var cell2 = row.insertCell(1);// adds 2nd row cell
+   var cell3 = row.insertCell(2);// adds 3rd row cell
+   cell1.innerHTML = element.name;
+   cell2.innerHTML = element.birthYear;
+   cell3.innerHTML = `<a href=${element.link}>${element.link}</a>`;
+}
+
 // first a function to sort by name:
 function byName(a, b) {
   if (a.name < b.name) return -1;
@@ -44,7 +58,19 @@ function pickArtist() {
   return artists[randomIndex].name;
 }
 
-console.log(pickArtist());
+let contents = "<tr> <th>Name</th> <th>Date of Birth</th> <th>Link</th> </tr>";// needs data so insert row can work
+
+const table = document.querySelector("#bhangra");
+table.innerHTML = contents;
+ for(const element of artists){
+   var row = table.insertRow(-1);// adds to bottom
+   var cell1 = row.insertCell(0);// adds 1st row cell
+   var cell2 = row.insertCell(1);// adds 2nd row cell
+   var cell3 = row.insertCell(2);// adds 3rd row cell
+   cell1.innerHTML = element.name;
+   cell2.innerHTML = element.birthYear;
+   cell3.innerHTML = `<a href=${element.link}>${element.link}</a>`;
+}
 
 // Shuffle the artists randomly:
 
@@ -62,10 +88,6 @@ console.log(pickArtist());
  return input;
 };
 
-const myArray = [1,2,3,4,5,6,7,8,9,10];
-console.log(myArray.shuffle());
-console.log(artists.shuffle());
-
 // Suppose that this js file gets loaded by
 // the browser when it parses some html file,
 // and suppose that the html file has a button
@@ -73,12 +95,10 @@ console.log(artists.shuffle());
 // Then you could use the above ideas to add
 // an event-listener to the button
 // to show a randomly-selected artist:
-/*
 const randomButton = document.querySelector("#random-button");
 randomButton.addEventListener("click", showRandomArtist);
 
 function showRandomArtist() {
-  const artist = document.querySelector("#random-artist");
-  artist.innerHTML = pickArtist();
+  const artist = document.querySelector("#bhangra");
+  artist.innerHTML = artists.shuffle();
 }
-*/
