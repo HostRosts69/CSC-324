@@ -198,11 +198,14 @@ function sortTable_byYear(){
 
  
 //  Sources used to help me:
+
 // This code used to help me understand how the subsetting was working
 // Similar to data science when table data was scraped from website
-    // console.log(rows);
-    // console.log(rows[i]);
-    // console.log(row1);
+//    - console.log(rows);
+//    - console.log(rows[i]);
+//    - console.log(row1);
+
+// Links:
 //   - https://www.w3schools.com/jsref/coll_table_rows.asp (searched: find out how many rows in table js)
 //   - https://www.tutorialspoint.com/how-to-access-tr-element-from-table-using-javascript#:~:text=To%20access%20a%20element,tr%3E%20elements%20within%20the%20table (searched: get elements of rows js)
 //   - https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName (searched: getElementsByTagName js)
