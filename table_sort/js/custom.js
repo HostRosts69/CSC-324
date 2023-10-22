@@ -66,7 +66,7 @@ const buttons = [
           
           if (row1.innerHTML.toLowerCase() > row2.innerHTML.toLowerCase()) {// .toLowerCase: makes string lowercase
               rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);//inserts row needing to be switched, before the second row
-              switching = true; // double checks if they need to be sorted more
+              switchTR = true; // double checks if they need to be sorted more
             }
         }
       };}
@@ -206,6 +206,9 @@ function sortTable_byYear(){
 //    - console.log(row1);
 
 // Links:
+// code to edit:
+//   - https://www.w3schools.com/howto/howto_js_sort_table.asp (searched sort table js)
+// To better understand:
 //   - https://www.w3schools.com/jsref/coll_table_rows.asp (searched: find out how many rows in table js)
 //   - https://www.tutorialspoint.com/how-to-access-tr-element-from-table-using-javascript#:~:text=To%20access%20a%20element,tr%3E%20elements%20within%20the%20table (searched: get elements of rows js)
 //   - https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName (searched: getElementsByTagName js)
